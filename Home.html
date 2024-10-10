@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="Icon Web.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<style>
+
+body {
+margin: 0;
+font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+.poppins-boldd {
+font-weight: 700;
+font-size: 25px;
+line-height: 1.5;
+}
+
+.poppins-content {
+font-weight: 600;
+font-size: 15px;
+line-height: 1.5;
+margin-top: 12px;
+}
+
+.box {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+background-color: rgb(118, 171, 174);
+padding: 20px;
+margin: 20px;
+border-radius: 10px;
+gap: 10px;
+height: auto;
+width: auto;
+}
+
+.box1 {
+display: flex;
+justify-content: center;
+align-items: center;
+height: auto;
+width: auto;
+background-color: rgb(118, 171, 174);
+padding: 5px;
+border-radius: 10px;
+}
+
+.button-container {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+.box2 {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+background-color: lightgrey;
+height: auto; 
+padding: 20px;
+border-radius: 10px;
+width: auto;
+text-align: center;
+}
+
+.box2 img {
+width: 120px;
+margin: 5px; 
+ border-radius: 10px;
+}
+
+.box2:last-child {
+margin-right: 0;
+}
+
+.poppins-thin {
+font-family: "Poppins", sans-serif;
+font-weight: 100;
+font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.text-container {
+flex: 1;
+}
+
+.button-containerr {
+display: flex;
+align-items: center;
+margin-top: 10px;
+}
+
+.box3 {
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+height: 15px;
+max-height: 100px;
+background-color: white;
+padding: 8px;
+border-radius: 10px;
+width: 20%;
+}
+
+.poppins-ijo {
+position: relative;
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+color: rgb(118,171,174);
+line-height: 1;
+font-size: 15px;
+}
+
+.poppins-putih {
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+color: white;
+line-height: 1;
+font-size: 15px;
+margin-left: 30px;
+}
+
+.poppins-boldd {
+font-weight: 700;
+font-size: 25px;
+line-height: 1.5;
+}
+
+ .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 20%;
+            overflow: hidden;
+            margin-left: 20px;
+}
+
+.circle img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+}
+
+	</style>
+	<title>Web Belajar</title>
+</head>
+<body>
+
+<!--          HEADER-->
+<style>
+  .bg-header
+  {
+    position: relative; height: 50px; left: 0px;
+    background-color: rgb(34, 40, 49); margin: 0px;
+  }
+</style>
+<div class="bg-header"></div>
+    
+
+<!--          SLIDE LOGO-->
+<style>
+  .slide-logo
+  {
+    position: absolute; height: 50px; left: 0px;
+    top: 0px; margin: 0px; width: 70px;
+  }
+
+  .logo
+  {
+    position: absolute; top: 50%; left: max(3vw, 10px); 
+    transform: translate(0%, -50%);
+    font-size: 15px; color: rgb(238,238,238);
+  }
+
+  .link-logo
+  {
+    color: rgb(238, 238, 238);
+    text-decoration-line:none;
+  }
+</style>
+<div class="slide-logo">
+
+<!--          LOGO-->
+<div class="poppins-regular logo"><a class="link-logo" href="Beranda.html">
+SICode
+</a>
+</div>
+</div>
+
+<!--          SLIDE TOMBOL HALAMAN-->
+<style>
+  .gulir-halaman
+  {
+    position: absolute; height: 50px; top: 0px; left: 85px; 
+    right: 70px; width: auto; white-space: nowrap; 
+    overflow-x: scroll; text-align: center;
+  }
+
+  .posisi-gulir
+  {
+    position: absolute; height: auto; top: 50%; 
+    transform: translate(0%, -50%); width: 100%;
+  }
+
+  .tombol-halaman
+  {
+    margin: 0px 4vw 0px 4vw; display: inline-block;
+    color: rgb(238,238,238);
+    font-size: max(1.5vw, 11px);
+    @media screen and (min-width: 900px) {font-size: 12px;};
+  }
+  .link-header 
+  {
+    color:rgb(238,238,238);
+    text-decoration-line: none;
+  }
+</style>
+
+<div class="gulir-halaman">
+
+<div class="posisi-gulir">
+
+<!--          TOMBOL FAQ-->
+<div class="poppins-bold tombol-halaman"><a class="link-header" href="Help.html">
+FAQ
+</a>
+</div>
+  
+<!--          TOMBOL ABOUT US-->  
+<div class="poppins-bold tombol-halaman"><a class="link-header" href="About-Us.html">
+About Us
+</a>
+</div>
+
+  
+<!--          TOMBOL HELP-->
+<div class="poppins-bold tombol-halaman"><a class="link-header" href="Help.html">
+Help
+</a>
+</div>
+
+</div>
+</div> 
+
+<!--          SLIDE TOMBOL LOGIN & DAFTAR-->
+<style>
+  .slide-tombol
+  {
+    position: absolute; height: 50px; top: 0px; right: 0px; width: 70px;
+  }
+
+  .tombol-logout
+  {
+    position: absolute; top: 50%; right: 15px; 
+    transform: translate(0%, -50%); height: 25px; width: 50px; border-radius: 10px; background-color: rgb(49, 54, 63); 
+  }
+
+  .logout
+  {
+    position: absolute; top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: rgb(238,238,238); white-space: nowrap;
+    font-size: max(1.5vw, 11px);
+    @media screen and (min-width: 900px) {font-size: 12px;}
+  }
+  .link-logout
+  {
+    color: rgb(255, 123, 123);
+    text-decoration-line: none;
+  }
+
+</style>
+
+<div class="slide-tombol">
+
+<!--          TOMBOL Logout-->
+<div class="tombol-logout">
+
+<div class="poppins-bold logout"><a class="link-logout" href="Beranda.html">
+Logout
+</a>
+</div>
+</div>
+
+
+</div>
+
+
+<!--          SLIDE BANNER-->
+<style>
+  .slide-banner
+  {
+    position: relative; height: 45vw; max-height: 250px;
+    text-align: center; 
+    background-image: linear-gradient(to top,rgb(118,171,174) 0%,rgb(238, 238, 238) 26%);
+  }
+
+  .banner
+  {
+    aspect-ratio: 8.5/4; height: 100%;
+  }
+</style>
+<div class="slide-banner">
+
+<a href="">
+<img class="banner" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfEFKsJWAB4J8Q9ZElF03piXPRhBc5VY5NbTynf0VnD_GHBOqP3HSTlE5gffFVCWcOS0xoilVM4hv5iz2sieYg3d3btMptTWTClY0lv7odOSj1yQsc1C_X7mWLaBDYp3BGgs-tliiGS7fL5awG2VYOS0ml9OcmhorrESxv4jC3pRjl5Pp3aFXg5BwWUNo/s1600/Top%20Content%20New.jpg"></a>
+</div>
+
+
+<!--          SLIDE PILIHAN PROGRAM-->
+<style>
+
+.slide-pilihan
+  {
+    position: relative; height: auto; text-align: center
+  }
+  
+.judul-pilihan
+  {
+    text-align: center; margin: 20px 0px 0px 0px;
+    display: inline-block;white-space: nowrap;
+    font-size: min(4.5vw, 18px);
+  }
+
+  .deskripsi-pilihan
+  {
+    text-align: center; font-size: min(4vw, 14px);
+    display: inline-block; padding-left: 10vw; padding-right: 10vw; max-width: 550px;
+    margin-bottom: 0px;
+  }
+
+  .poppins-boldd {
+			font-weight: 700;
+			font-size: 25px;
+			line-height: 1.5;
+		}
+
+		.poppins-content {
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 1.5;
+			margin-top: 12px;
+		}
+
+		.box {
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			background-color: rgb(118, 171, 174);
+			padding: 20px;
+			margin: 20px;
+			border-radius: 10px;
+			gap: 10px;
+			height: auto;
+			width: auto;
+		}
+
+		.box1 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: auto;
+			width: auto;
+			background-color: rgb(118, 171, 174);
+			padding: 5px;
+			border-radius: 10px;
+		}
+
+		.button-container {
+			display: flex;
+			justify-content: center;
+			margin-top: 10px;
+		}
+
+		.box2 {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			background-color: lightgrey;
+			height: auto; 
+			padding: 20px;
+			border-radius: 10px;
+			width: auto;
+			text-align: center;
+		}
+
+		.box2 img {
+			width: 120px;
+			margin: 5px;
+			border-radius: 10px; 
+		}
+
+		.box2:last-child {
+			margin-right: 0;
+		}
+
+</style>
+
+<div class="slide-pilihan">
+
+<!--          JUDUL DAN DESKRIPSI-->
+<h2 class="poppins-bold judul-pilihan">
+Pilihan Program Belajar Intensif<br/>
+SICode
+</h2>
+<div></div>
+<p class="poppins-content deskripsi-pilihan">
+Dengan kurikulum terstruktur dan bimbingan langsung dari para ahli industri, Anda akan memperoleh pengalaman pembelajaran yang mendalam dan aplikatif.
+</p>
+</div>
+
+	
+<!--          SLIDE DAFTAR KATEGORI-->
+<style>
+  .slide-kategori
+  {
+    position: relative; background-color: rgb(118, 171, 174); 
+    padding: 20px; margin: 20px; border-radius: 10px; 
+    height: auto; width: auto; white-space: nowrap; 
+    overflow-x: scroll; text-align: center
+  }
+
+  .bg-kategori 
+  {
+    margin: 0px 1.5vw 0px 1.5vw; height: auto;
+    display: inline-block; background-color: lightgrey;
+    padding: 20px; border-radius: 10px;text-align: center; 
+    width: min(40vw, 180px);
+  }
+
+  .judul-kategori
+  {
+    margin: 0px;
+    font-size: max(1.7vw, 15px);
+    @media screen and (min-width: 900px) {font-size: 17px;};
+  }
+
+  .gambar-kategori
+  {
+    display: inline-block; margin-top: 1vw;
+    border-radius: 10px; width: 100%;
+  }
+
+  .kategori
+  {
+    white-space: normal;
+    font-size: max(1.5vw, 12px);
+    @media screen and (min-width: 900px) {font-size: 13px;}
+  }
+
+  .daftar-sekarang
+  {
+    display: inline-block;
+    width: auto; background-color: rgb(118, 171, 174); 
+    padding: 8px 6px 8px 6px; border-radius: 10px;color:white; 
+    margin: 20px 0px 0px 0px; white-space: normal;
+    text-decoration-line: none;
+    font-size: max(1.5vw, 13px); 
+    @media screen and (min-width: 900px) {font-size: 16px;};
+  }
+
+</style>
+
+<!--          BOX LATAR-->
+<div class="box" style="overflow: auto ;">
+    <div class="box2">
+      <div class="poppins-content" style="margin-top: -10px">
+        Program A
+      </div>
+      <img src="https://i.pinimg.com/originals/e8/75/74/e875741a18b546f4f3163af4ae2b48c1.png" alt="Program Freelance">
+      <div class="poppins-content" style="font-size: 12px;">	
+        Ikuti bootcamp freelance kami dan raih keterampilan untuk sukses sebagai freelancer. Daftar sekarang dan mulai karier fleksibelmu!
+      </div>
+      <div class="button-container">
+        <div class="box1">
+          <div class="poppins-content">
+            <div style="color:white; text-justify: center; position: relative; margin-top: -10px">
+              Saya Ikut!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="poppins-content" style="margin-top: -10px">
+        Program B
+      </div>
+      <img src="https://i.pinimg.com/originals/10/25/38/102538eaecdaadfbf2e1b252c55ecb64.png" alt="Program UI/UX">
+      <div class="poppins-content" style="font-size: 12px;">	
+      Ikuti bootcamp UI/UX kami untuk belajar desain pengalaman pengguna. Dengan bimbingan ahli, mulai kariermu sebagai desainer profesional.
+      </div>
+      <div class="button-container">
+        <div class="box1">
+          <div class="poppins-content">
+            <div style="color:white; text-justify: center; position: relative; margin-top: -10px">
+              Saya Ikut!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="poppins-content" style="margin-top: -10px">
+        Program C
+      </div>
+      <img src="https://i.pinimg.com/originals/4d/bf/22/4dbf223b2ea41e58f198d760c92b4fd2.png" alt="Program C">
+      <div class="poppins-content" style="font-size: 12px;">	
+        Ikuti bootcamp Web Development kami, pelajari coding dari para ahli, dan mulai kariermu sebagai developer. Daftar sekarang!
+      </div>
+      <div class="button-container">
+        <div class="box1">
+          <div class="poppins-content">
+            <div style="color:white; text-justify: center; position: relative; margin-top: -10px">
+              Saya Ikut!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!--          DAFTAR MATERI-->
+<style>
+
+.link-materi
+{
+  color: rgb(238,238,238)
+}
+  .font {
+      padding: 20px;
+  }
+
+  .class-for-beginner {
+      color: #DC213E;
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+
+  .kotak1 {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 100px; 
+      overflow-x: auto;
+      padding: 20px;
+      margin: 0;
+  }
+
+  .rectangle-white {
+      min-width: 300px;
+      height: 370px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+      background-color: #FFFEFE;
+      position: relative; 
+  }
+
+  .rectangle-tosca {
+      width: 100%;
+      height: 50%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: #76abae;
+      position: relative;
+  }
+
+  .rectangle-kecil {
+      position: absolute;
+      width: 65px;
+      height: 20px;
+      left: 3%;
+      top: 80%;
+      border-radius: 5px;
+      background-color: #EEEEEE;
+  }
+
+  .teks-materi {
+      font-size: 10px;
+      text-align: center;
+  }
+
+  .materi {
+      position: absolute;
+      top: 110%;
+      left: 5%;
+      font-size: 16px;
+  }
+
+  .bawah-materi {
+      font-size: 12px;
+  }
+
+  .ikonfile {
+      position: absolute;
+      left: 4px;
+      top: 3.5px;
+  }
+
+  .rectangle-daftar {
+      width: 90%;
+      height: 45px;
+      margin: 10px auto;
+      text-align: center;
+      border-radius: 10px;
+      background-color: #76abae;
+      color: white;
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      font-size: 16px;
+      font-weight: bold;
+      position: absolute;
+      bottom: 10px; 
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .gratis {
+      position: absolute;
+      font-weight: bold;
+      right: 10%;
+      bottom:-110px;
+      color: #DC213E;
+  }
+
+  /* Responsiveness for Mobile, iPad, and Laptop */
+  @media (max-width: 768px) {
+      .kotak1 {
+          gap: 50px; 
+      }
+
+      .rectangle-white {
+          min-width: 250px;
+          height: 350px;
+      }
+
+      .materi {
+          font-size: 14px;
+      }
+
+      .bawah-materi {
+          font-size: 11px;
+      }
+
+      .rectangle-daftar {
+          font-size: 14px;
+      }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+      .kotak1 {
+          gap: 75px; 
+      }
+
+      .rectangle-white {
+          min-width: 280px;
+          height: 360px;
+      }
+
+      .materi {
+          font-size: 15px;
+      }
+
+      .bawah-materi {
+          font-size: 12px;
+      }
+
+      .rectangle-daftar {
+          font-size: 15px;
+      }
+  }
+
+  @media (min-width: 1025px) {
+      .kotak1 {
+          gap: 100px; 
+          flex-wrap: wrap;
+      }
+
+      .rectangle-white {
+          min-width: 300px;
+          height: 370px;
+      }
+
+      .materi {
+          font-size: 16px;
+      }
+
+      .bawah-materi {
+          font-size: 12px;
+      }
+
+      .rectangle-daftar {
+          font-size: 16px;
+      }
+  }
+
+</style>
+
+<div class="font">
+  <div class="class-for-beginner">Class For Beginner</div>
+  <div class="kotak1">
+      <div class="rectangle-white">
+          <div class="rectangle-tosca">
+              <div class="rectangle-kecil">
+                  <div class="teks-materi">5 Materi</div>
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj91TGPCOee18MQx2tybZqnaT7k0wSoaQDJ2On2fEDQfz6gQHASxuNEPQbiZ8hgMbk1bCJJ4N8qXZpzua95Kdh-AxBE8I0L5hQrr-MwXWRvDu8QZWHcHvgqV75Jlu3-51Mm3bpt0-Y9W9I1llcplftoGkBKxI-7yQ3HSShk4oldw65VXKxa2L1PSyUTtq4/w256-h256-p-k-no-nu/Icon.png" alt="ikon-file" class="ikonfile" />
+              </div>
+              <div class="materi">
+                  <strong>Materi 1 - HTML + CSS</strong>
+                  <p class="bawah-materi">Beginner • Course • 3-4 Weeks</p>
+              </div>
+              <div class="gratis">GRATIS</div>
+          </div>
+          <div class="rectangle-daftar"><a class="link-materi" href="Materi-Html-Css.html">
+            Lihat Materi
+          </a>
+        </div>
+      </div>
+      <div class="rectangle-white">
+        <div class="rectangle-tosca">
+            <div class="rectangle-kecil">
+                <div class="teks-materi">5 Materi</div>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj91TGPCOee18MQx2tybZqnaT7k0wSoaQDJ2On2fEDQfz6gQHASxuNEPQbiZ8hgMbk1bCJJ4N8qXZpzua95Kdh-AxBE8I0L5hQrr-MwXWRvDu8QZWHcHvgqV75Jlu3-51Mm3bpt0-Y9W9I1llcplftoGkBKxI-7yQ3HSShk4oldw65VXKxa2L1PSyUTtq4/w256-h256-p-k-no-nu/Icon.png" alt="ikon-file" class="ikonfile" />
+            </div>
+            <div class="materi">
+                <strong>Materi 2 - HTML + Javascript</strong>
+                <p class="bawah-materi">Beginner • Course • 3-4 Weeks</p>
+            </div>
+            <div class="gratis">GRATIS</div>
+        </div>
+        <div class="rectangle-daftar"><a class="link-materi" href="Materi-Html-Javascript.html">
+          Lihat Materi
+        </a>
+      </div>
+    </div>
+    <div class="rectangle-white">
+      <div class="rectangle-tosca">
+          <div class="rectangle-kecil">
+              <div class="teks-materi">5 Materi</div>
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj91TGPCOee18MQx2tybZqnaT7k0wSoaQDJ2On2fEDQfz6gQHASxuNEPQbiZ8hgMbk1bCJJ4N8qXZpzua95Kdh-AxBE8I0L5hQrr-MwXWRvDu8QZWHcHvgqV75Jlu3-51Mm3bpt0-Y9W9I1llcplftoGkBKxI-7yQ3HSShk4oldw65VXKxa2L1PSyUTtq4/w256-h256-p-k-no-nu/Icon.png" alt="ikon-file" class="ikonfile" />
+          </div>
+          <div class="materi">
+              <strong>Materi 3 - PHP</strong>
+              <p class="bawah-materi">Beginner • Course • 3-4 Weeks</p>
+          </div>
+          <div class="gratis">GRATIS</div>
+      </div>
+      <div class="rectangle-daftar">Lihat Materi</div>
+  </div>
+  <div class="rectangle-white">
+    <div class="rectangle-tosca">
+        <div class="rectangle-kecil">
+            <div class="teks-materi">5 Materi</div>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj91TGPCOee18MQx2tybZqnaT7k0wSoaQDJ2On2fEDQfz6gQHASxuNEPQbiZ8hgMbk1bCJJ4N8qXZpzua95Kdh-AxBE8I0L5hQrr-MwXWRvDu8QZWHcHvgqV75Jlu3-51Mm3bpt0-Y9W9I1llcplftoGkBKxI-7yQ3HSShk4oldw65VXKxa2L1PSyUTtq4/w256-h256-p-k-no-nu/Icon.png" alt="ikon-file" class="ikonfile" />
+        </div>
+        <div class="materi">
+            <strong>Materi 4 - Pyton</strong>
+            <p class="bawah-materi">Beginner • Course • 3-4 Weeks</p>
+        </div>
+        <div class="gratis">GRATIS</div>
+    </div>
+    <div class="rectangle-daftar">Lihat Materi</div>
+</div>
+  </div>
+</div>
+
+<!--          SLIDE PENAWARAN PARTNER-->
+<style>
+  .slide-partner
+  {
+    position: relative; background-color: rgb(118, 171, 174); 
+    height: auto; padding: 20px; margin: 20px; border-radius: 10px; 
+    text-align: center;
+  }
+
+  .gambar-partner
+  {
+    float: right; margin-left: 10px;width: 100px; 
+    height: 100px; border-radius: 20%;
+  }
+
+  .judul-partner
+  {
+    color:white; text-align: left;
+    font-size: max(2vw, 18px); margin: 0px;
+    @media screen and (min-width: 900px) {font-size: 20px;}; 
+  }
+
+  .deskripsi-partner
+  {
+    color:white; text-align: left;
+    font-size: max(1.5vw, 13px);
+    @media screen and (min-width: 900px) {font-size: 16px;};
+  }
+
+  .gabung-partner
+  {
+    display: inline-block; margin: 20px 0px 0px 0px; height: auto; 
+    background-color: white; padding: 8px; border-radius: 10px; 
+    width: fit-content; white-space: normal; 
+    color:rgb(118,171,174);line-height:1;
+    text-decoration-line: none;
+    font-size: max(1.5vw, 14px);
+    @media screen and (min-width: 900px) {font-size: 16px;}; 
+  }
+
+  .pelajari-partner
+  {
+    display: inline-block; color: white; 
+    line-height: 1; margin: 20px 0px 0px 25vw;
+    font-size: max(1.5vw, 14px);
+    @media screen and (min-width: 900px) {font-size: 16px;};
+  }
+
+  .link-partner
+  {
+    color: rgb(118,171,174);
+  }
+
+  .link-partner-2
+  {
+    color: rgb(238, 238, 238)
+  }
+</style>
+
+<div class="slide-partner">
+
+<!--          GAMBAR PARTNER -->
+<img class="gambar-partner" src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p3/39/2024/05/24/1496290428_rukopozhatierukopozhatievkartinkahdelovoerukopozhatierukopozhatieklipart76274076715-104809883.jpg" alt="Gambar Partner">
+
+<!--          JUDUL DAN DESKRIPSI-->
+<h2 class="poppins-bold judul-partner">
+Anda Tertarik dan Siap menjadi Partner Kami untuk Memberi Dampak Positif?
+</h2>
+
+<p class="poppins-content deskripsi-partner">
+Bergabung bersama kami untuk membangun pendidikan Indonesia yang lebih baik.
+</p>
+
+<!--          TOMBOL-->
+<div class="poppins-semibold gabung-partner"><a class="link-partner" href="Partner.html">
+Gabung Sekarang
+</a>
+</div>
+    
+<div class="poppins-semibold pelajari-partner"><a class="link-partner-2" href="Partner.html">
+<u>Pelajari Lebih Lanjut</u>
+</a></div>
+
+</div> 
+
+
+<!--          SLIDE TESTIMONI-->
+<style>
+  .slide-testimoni
+  {
+    position: relative; height: min(80vw, 300px); 
+    background-color: rgb(34, 40, 49);
+  }
+
+  .judul-testimoni
+  {
+    position: absolute; top: 18px; left: 50%; 
+    transform: translate(-50%); white-space: nowrap; 
+    color:rgb(238,238,238); margin: 0px;
+    font-size: min(4.5vw, 20px); 
+  }
+
+  .gulir-testimoni
+  {
+    position: absolute; top: 0px; left: 50%; 
+    transform: translate(-50%); width: 95%; 
+    height: min(80vw, 300px); overflow-x: scroll; 
+    white-space: nowrap; text-align: center;
+  }
+
+  .testimoni
+  {
+    display: inline-block; width: min(30vw, 125px);
+    margin: min(21vw, 80px) 3vw 0px 3vw; 
+    border-radius: 70px 70px 0px 0px;
+  }
+</style>
+
+<div class="slide-testimoni">
+
+<!--          JUDUL-->
+<h2 class="poppins-bold judul-testimoni">
+Apa Kata Mereka?
+</h2>
+
+<!--          GULIR TESTIMONI-->
+<div class="gulir-testimoni">
+
+<!--          TESTIMONI 1-->
+<img class="testimoni" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYjflHASk5ZZIpE2fTuePXr-dU3VPfVlM0soDge0g-CdSMDENy8p_vGdfJi5jdZoWInnwbri9l_YCDZp1gbm6MO83f2oWV7Hf9NorFpWAod7TGwuaMo6mc7D4Lf_wu4xBDmlu-66qu8pTRtmp_TVqMUM7zmVRoS5xx8JH0m-Y-FhFIVYeve22WUXhzNVE/s1600/Testimoni%201.png">
+
+<!--          TESTIMONI 2-->
+<img class="testimoni" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYuU1nbDCDViGMRB74bxBwpDIlyoqFmSix-m3-LIM2kUziwQiEU_hg6d_XjW7Jne9aHyrCM7MCD9YJzciD2TWiBXV9-75NlabQF1tU7FvE0uLcjGeaOEhn2IE8j2Py9U41mE67OysGztBZD2_zTdRP7yh6agToygJI0uUQERY5ONgh0kvYHqbNw3iZzjo/s1600/Testimoni%202.png">
+
+<!--          TESTIMONI 3-->
+<img class="testimoni" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8xemZ2EeLglAtuU8bi6JbGh7YFrRKO7VPwpW835T_zuQoSmCbnoADQ5rYPTwkyqbbLx4UsMD1W-Px6SOY7wMTvLcDj07njq41vLx2Sj3H5Axh3YxFZrVqh9sakRAuoQr-hsI13rvj4PYYPTfi4UcBv8EC7XtJ6ciDJx_ZF2R71NAHas_l-NPXAqGw8Ng/s1600/Testimoni%203.png">
+
+<!--          TESTIMONI 4-->
+<img class="testimoni" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXqXIeTe-QG-TO71xpWfxQhO4GY9mKcKfAczTdGeHYL4MY4XtlQ0h6PO-L5QJTF7IRPDYaV0VytklBrEvIdbP3sXQbWWHp-7XFuwK0VL8Pn2VawArQiDULv_Ykk4EULfze_-NBmqUTwE5J6mZbpA0YNtEOZAygwRnSQtOAx1DmRVyu_xjcf9XW9AbgxwM/s1600/Testimoni%204.png" >
+
+<!--          TESTIMONI 5-->
+<img class="testimoni" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHm3COlZtLfGwivWTNjEBrXsJzxIGxkXbR8x2dEy5e-Jj0nkax-JWzdtzywfpH3zskjq1e6v-HqCiOBCkOBgB0ZoeJKvF3fJf0SVl7V5QuydtuKtobPQ1pRTMubq5g6JsQVumjIAD6D7XD3V0c4_NQdnvL_LhEPrN1K15iBBqTEyl3_RJ936aRZ1rv7Ck/s1600/Testimoni%205.png">
+</div>
+</div>
+
+
+<!--          HALAMAN FOOTER-->
+<style>
+  * {
+            box-sizing: border-box;
+            line-height: normal;
+            font-family: inherit;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* CSS Variables */
+        :root {
+            --blue_gray_200: #b2ccce;
+            --blue_gray_900: #31363f;
+            --gray_200: #eeeeee;
+            --red_700: #dc213e;
+            --radius-xs: 34px;
+        }
+
+        /* Utility Classes */
+        .flex-col-center-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .penjelasan {
+            font-weight: 500 !important;
+        }
+
+        .instagram_one {
+            height: 32px;
+            width: 32px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            display: flex;
+            background: linear-gradient(90deg, #eeeeee, #eeeeee, #b2ccce);
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .column {
+            margin-top: 20px;
+            gap: 52px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1004px;
+            padding: 0 20px;
+        }
+
+        .rownamaweb {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap; 
+            width: 100%;
+        }
+
+        .columncontact {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+        }
+
+        .columnnamaweb,
+        .columnnamaweb-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .contact {
+            margin-top: 28px;
+            font-weight: 700 !important;
+        }
+
+        .email {
+            margin-top: 4px;
+            font-weight: 500 !important;
+        }
+
+        .columnmobileno {
+            margin-top: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .columnaddress {
+            margin-top: 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .lihatdigoogle {
+            color: var(--red_700) !important;
+            font-weight: 500 !important;
+            text-decoration: underline;
+        }
+
+        .wrapper-sebelahan {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-left: auto;
+            padding-right: 20px;
+            flex-wrap: wrap; 
+        }
+
+        .columnothers {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap; 
+        }
+
+        .rowinstagram {
+            display: flex;
+            gap: 4px;
+        }
+
+        .rowcopyright202 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 30%;
+        }
+
+        .columnlogo {
+            background-color: var(--blue_gray_900);
+            width: 70px;
+            border-radius: var(--radius-xs);
+        }
+
+        .logo {
+            color: var(--gray_200) !important;
+        }
+
+        /* Text and Heading Styles */
+        .ui.text {
+            color: var(--blue_gray_900);
+            font-family: Poppins;
+        }
+
+        .ui.text.size-textxs {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .ui.heading {
+            color: var(--blue_gray_900);
+            font-family: Poppins;
+        }
+
+        .ui.heading.size-headingxs {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .ui.heading.size-headings {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .column {
+                max-width: 900px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .rownamaweb {
+                flex-direction: column; 
+            }
+
+            .columncontact, .wrapper-sebelahan, .columnothers {
+                width: 100%; 
+                margin-top: 20px;
+            }
+
+            .rowcopyright202 {
+                flex-direction: column;
+                align-items: center;
+                width: 100%; 
+            }
+
+            .columnlogo {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .ui.text.size-textxs {
+                font-size: 14px; 
+            }
+
+            .ui.heading.size-headingxs {
+                font-size: 12px; 
+            }
+
+            .ui.heading.size-headings {
+                font-size: 20px;
+            }
+
+            .instagram_one {
+                height: 24px; 
+                width: 24px;
+            }
+
+            .rowcopyright202 {
+                width: 100%;
+                flex-direction: column;
+            }
+        }
+</style>
+<footer class="footer">
+  <div class="column">
+      <div class="rownamaweb">
+          <div class="columncontact">
+              <div class="columnnamaweb">
+                  <h4 class="ui heading size-headings">SICode</h4>
+                  <p class="penjelasan ui text size-textxs">Website Koding Edukatif</p>
+              </div>
+              <h4 class="contact ui heading size-headings">Contact</h4>
+              <p class="email ui text size-textxs">SICode@gmail.com</p>
+              <div class="columnmobileno">
+                  <p class="penjelasan ui text size-textxs">+621234567889</p>
+              </div>
+              <div class="columnaddress">
+                  <h4 class="ui heading size-headings">Address</h4>
+                  <p class="penjelasan ui text size-textxs">Jl. Ahmad Yani, Surabaya</p>
+                  <p class="lihatdigoogle ui text size-textxs">Lihat di google maps</p>
+              </div>
+          </div>
+          <div class="wrapper-sebelahan">
+              <div class="rownamaweb_one">
+                  <h4 class="ui heading size-headings">SICode</h4>
+                  <ul class="columnothers">
+                      <li><a href="About-Us.html"><p class="ui text size-textxs">About Us</p></a></li>
+                      <li><a href="Partner.html"><p class="ui text size-textxs">Partner</p></a></li>
+                  </ul>
+              </div>
+              <div class="columnothers">
+                  <h4 class="ui heading size-headings">Others</h4>
+                  <ul class="columnothers">
+                      <li><a href="Help.html"><p class="ui text size-textxs">FAQ</p></a></li>
+                      <li><a href="Privacy-Policy.html"><p class="ui text size-textxs">Privacy Policy</p></a></li>
+                      <li><a href="Help.html"><p class="ui text size-textxs">Help</p></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="rowinstagram">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzy0oArLWzBaMvTH0YnxlB9ksRr1ZroBbyPiReitKCcopnSzJF9FBM6dkEm-VzAi3CAb9fMkiiuELkUFImBSh4vdn4HGg6A0RELeLe0pB9MdJQxLAnA-hec4-cEWKZ2VqpEdCdAqeFbPhYtRw91Y0uLg0laZvn4uMi3ELPnK76QfL0FdQyov1yxKdvYiI/w256-h256-p-k-no-nu/Instagram.png" alt="Instagram" class="instagram_one">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjroc_dnYzokDABzw_mrOlzS86c9JuVPhlj8472aBmFq6OFAwxsAazcgJe3DMaErVpNLWyB2GXGiCL8p4kqeLQ6SzH5GwMljIECCs783aSsoptOCtyFOtNRoS2Q2-vcpHGvhWU-7ZGdpWAWwrgFpytpYCH8l3Wb3oapoKcbGoGfE6IiXlfFHFL2zYpFIQQ/s32/Facebook.png" alt="Facebook" class="instagram_one">
+          </div>
+          <div class="rowcopyright202">
+              <p class="ui heading size-headingxs">Copyright © 2024 SICode</p>
+              <div class="flex-col-center-center columnlogo">
+                  <h4 class="logo ui heading size-headings"></h4>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>

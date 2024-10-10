@@ -1,0 +1,665 @@
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="Icon Web.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <style>
+    body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    }
+
+    ::-webkit-scrollbar {
+    display: none;
+    }
+
+    .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    }
+
+    .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    }
+
+    .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    }
+
+    .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    }
+
+    .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    }
+
+    .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+
+    .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    }
+
+    .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    }
+
+    .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    }
+
+    .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    }
+
+    .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    }
+
+    .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    }
+
+    .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    }
+
+    .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    }
+
+    .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    }
+
+    .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    }
+
+    .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    }
+
+
+        </style>
+        <title>Web Belajar</title>
+    </head>
+    <body>
+
+<!--          HEADER-->
+<style>
+	.bg-header
+	{
+	  position: relative; height: 50px; left: 0px;
+	  background-color: rgb(34, 40, 49); margin: 0px;
+	}
+  </style>
+  <div class="bg-header"></div>
+	  
+  
+  <!--          SLIDE LOGO-->
+  <style>
+	.slide-logo
+	{
+	  position: absolute; height: 50px; left: 0px;
+	  top: 0px; margin: 0px; width: 70px;
+	}
+  
+	.logo
+	{
+	  position: absolute; top: 50%; left: max(3vw, 10px); 
+	  transform: translate(0%, -50%);
+	  font-size: 15px; color: rgb(238,238,238);
+	}
+  
+	.link-logo
+	{
+	  color: rgb(238, 238, 238);
+	  text-decoration-line: none;
+	}
+  </style>
+  <div class="slide-logo">
+  
+  <!--          LOGO-->
+  <div class="poppins-regular logo"><a class="link-logo" href="Beranda.html">
+  SICode
+  </a>
+  </div>
+  </div>
+  
+  <!--          SLIDE TOMBOL HALAMAN-->
+  <style>
+	.gulir-halaman
+	{
+	  position: absolute; height: 50px; top: 0px; left: 85px; 
+	  right: 140px; width: auto; white-space: nowrap; 
+	  overflow-x: scroll; text-align: center;
+	}
+  
+	.posisi-gulir
+	{
+	  position: absolute; height: auto; top: 50%; 
+	  transform: translate(0%, -50%); width: 100%;
+	}
+  
+	.tombol-halaman
+	{
+	  margin: 0px 4vw 0px 4vw; display: inline-block;
+	  color: rgb(238,238,238);
+	  font-size: max(1.5vw, 11px);
+	  @media screen and (min-width: 900px) {font-size: 12px;};
+	}
+	.link-header 
+	{
+		color:rgb(238,238,238);
+		text-decoration-line: none;
+        font-weight:normal;
+	}
+  </style>
+  
+  <div class="gulir-halaman">
+  
+  <div class="posisi-gulir">
+  
+  <!--          TOMBOL FAQ-->
+  <div class="poppins-bold tombol-halaman"><a class="link-header" href="Help.html">
+  <b>FAQ</b>
+  </a>
+  </div>
+	
+  <!--          TOMBOL ABOUT US-->  
+  <div class="poppins-bold tombol-halaman"><a class="link-header" href="About-Us.html">
+  About Us
+  </a>
+  </div>
+  
+	
+  <!--          TOMBOL HELP-->
+  <div class="poppins-bold tombol-halaman"><a class="link-header" href="Help.html">
+  <b>Help</b>
+  </a>
+  </div>
+  
+  </div>
+  </div> 
+  
+  <!--          SLIDE TOMBOL LOGIN & DAFTAR-->
+  <style>
+	.slide-tombol
+	{
+	  position: absolute; height: 50px; top: 0px; right: 0px; width: 140px;
+	}
+  
+	.tombol-login
+	{
+	  position: absolute; top: 50%; right: 15px; 
+	  transform: translate(0%, -50%); height: 25px; width: 50px; border-radius: 10px; background-color: rgb(49, 54, 63); 
+	}
+  
+	.tombol-daftar
+	{
+	  position: absolute; top: 50%; right: 75px; 
+	  transform: translate(0%, -50%); height: 25px; width: 50px; border-radius: 10px; margin-right: min(1.5vw, 5px);
+	  background-color: rgb(49, 54, 63)
+	}
+  
+	.login, .daftar
+	{
+	  position: absolute; top: 50%; left: 50%; 
+	  transform: translate(-50%, -50%); 
+	  color: rgb(238,238,238); white-space: nowrap;
+	  font-size: max(1.5vw, 11px);
+	  @media screen and (min-width: 900px) {font-size: 12px;}
+	}
+	.link-daftar-login
+	{color: rgb(238,238,238);text-decoration-line: none;font-weight: normal;}
+  
+  </style>
+  
+  <div class="slide-tombol">
+  
+  <!--          TOMBOL LOGIN-->
+  <div class="tombol-login">
+  
+  <div class="poppins-bold login"><a class="link-daftar-login" href="Login.html">
+  Login
+  </a>
+  </div>
+  </div>
+  
+  <!--          TOMBOL DAFTAR-->
+  <div class="tombol-daftar">
+  
+  <div class="poppins-bold daftar"><a class="link-daftar-login" href="Sign-Up.html">
+  Sign Up
+  </a>
+  </div>
+  </div>
+  </div>
+
+    <!--                FAQ-->
+    <div style="display: block;position: relative;height: auto;text-align: center;background-image:linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(118, 171, 174) 90%)">
+        
+        <div class="poppins-bold" style="padding-top: min(3vw, 20px);display: inline-block;font-size: min(5vw, 20px); color:rgb(34, 40, 49);">
+            Frequently Ask Question
+        </div>
+        <div></div>
+        <div class="poppins-regular" style="display: inline-block;margin-top:min(3vw, 15px);width: 70%; max-width:400px;background-image:linear-gradient(to bottom,rgba(118,171,174, 0.5)0%, rgba(255, 255, 255, 0.3)4%, rgba(238,238,238,0.3)90%,rgba(118,171,174,1)100%); height: auto;font-size: max(1.5vw, 12px);padding:3vw 3vw 4vw 3vw; border-radius: 10px">
+
+        <div style="text-align: left; " onclick="ShowAnswer1()">Apa itu SICode?
+        </div>
+        <hr style="border: 1px solid rgb(54, 122, 126);margin: 1vw 0px 0px 0px">
+
+        <div id="Answer1" style="display: none; text-align: left;height: auto;padding: 1.5vw 0px 1vw 0px">
+        
+        <span style="margin-left:2vw;">SICode adalah website edukatif yang menyediakan materi tentang koding secara gratis</span>
+        </div>
+
+        <div style="text-align: left; margin-top: 10px" onclick="ShowAnswer2()">Kenapa materi yang disajikan gratis?
+        </div>
+        <hr style="border: 1px solid rgb(54, 122, 126);margin: 1vw 0px 0px 0px">
+
+        <div id="Answer2" style="display: none; text-align: left;height: auto;padding: 1.5vw 0px 1vw 0px">
+        
+		<span style="margin-left:2vw;">Kami ingin memberikan manfaat kepada banyak orang agar mereka dapat belajar koding tanpa perlu berlangganan</span>
+		<br>
+		</div>
+		<div style="text-align: left; margin-top: 10px" onclick="ShowAnswer3()">Bagaimana saya dapat berkontribusi untuk website ini?
+        </div>
+        <hr style="border: 1px solid rgb(54, 122, 126);margin: 1vw 0px 0px 0px">
+
+        <div id="Answer3" style="display: none; text-align: left;height: auto;padding: 1.5vw 0px 1vw 0px">
+        
+		<span style="margin-left:2vw;">Kami ucapkan terima kasih atas kepedulian Anda pada website kami. Cukup berikan komentar kepada kami tentang kesalahan ketik, kode, atau hal lainnya yang Anda temukan di website kami agar kami dapat menyempurnakannya.</span>
+		</div>
+		</div>
+
+
+<div></div>
+<div class="poppins-bold" style="padding-top: min(3vw, 20px);display: inline-block;font-size: min(5vw, 20px); color:rgb(34, 40, 49);margin-top: 10px">
+    Butuh Bantuan Lebih Lanjut?
+</div>
+
+<div></div>
+<div style="display: inline-block; width: 70%; max-width: 400px;height: auto; background-color:rgba(255, 255, 255, 0.5);padding:2vw 2vw 3vw 2vw; border-radius: 10px;margin-top:min(3vw, 15px);font-size: max(1.5vw, 14px)">
+
+<style>
+    label {display: block;margin-bottom: 5px}
+    input, textarea {width: 80%; padding: 1vw 2vw 1vw 2vw; background-color: rgba(255, 255, 255, 0.7); border-radius: 10px;border-width: 0px;white-space: normal;font-size: max(1.5vw, 14px)}
+    .kirim {width: auto;background-color: rgba(118,171,174,1);color: white;padding: 7px 10px 7px 10px;}
+</style>
+    <form>
+        <label class="poppins-semibold" for="nama">Nama:</label>
+        <input class="poppins-regular" type="text" id="nama" name="nama"><br><br>
+        <label class="poppins-semibold" for="whatsapp">Nomor Whatsapp:</label>
+        <input class="poppins-regular" type="tel" id="whatsapp" name="whatsapp"><br><br>
+        <label class="poppins-semibold" for="pesan">Pesan:</label>
+        <textarea class="poppins-regular" type="text" id="pesan" name="pesan"></textarea><br><br>
+        <input class="poppins-bold kirim" type="submit" value="KIRIM">
+    </form>
+
+</div>
+
+<br>
+<br>
+<br>
+</div>
+
+<!--          HALAMAN FOOTER-->
+<style>
+	* {
+			  box-sizing: border-box;
+			  line-height: normal;
+			  font-family: inherit;
+			  margin: 0;
+			  padding: 0;
+		  }
+  
+		  img {
+			  max-width: 100%;
+			  height: auto;
+		  }
+  
+		  a {
+			  text-decoration: none;
+			  display: block;
+		  }
+  
+		  ul {
+			  margin: 0;
+			  padding: 0;
+			  list-style: none;
+		  }
+  
+		  /* CSS Variables */
+		  :root {
+			  --blue_gray_200: #b2ccce;
+			  --blue_gray_900: #31363f;
+			  --gray_200: #eeeeee;
+			  --red_700: #dc213e;
+			  --radius-xs: 34px;
+		  }
+  
+		  /* Utility Classes */
+		  .flex-col-center-center {
+			  display: flex;
+			  flex-direction: column;
+			  align-items: center;
+			  justify-content: center;
+		  }
+  
+		  .penjelasan {
+			  font-weight: 500 !important;
+		  }
+  
+		  .instagram_one {
+			  height: 32px;
+			  width: 32px;
+		  }
+  
+		  /* Footer Styles */
+		  .footer {
+			  display: flex;
+			  background: linear-gradient(90deg, #eeeeee, #eeeeee, #b2ccce);
+			  width: 100%;
+			  justify-content: center;
+			  align-items: center;
+			  padding: 10px;
+		  }
+  
+		  .column {
+			  margin-top: 20px;
+			  gap: 52px;
+			  display: flex;
+			  flex-direction: column;
+			  width: 100%;
+			  max-width: 1004px;
+			  padding: 0 20px;
+		  }
+  
+		  .rownamaweb {
+			  display: flex;
+			  justify-content: space-between;
+			  align-items: flex-start;
+			  gap: 40px;
+			  flex-wrap: wrap; 
+			  width: 100%;
+		  }
+  
+		  .columncontact {
+			  width: 30%;
+			  display: flex;
+			  flex-direction: column;
+			  align-items: flex-start; 
+		  }
+  
+		  .columnnamaweb,
+		  .columnnamaweb-1 {
+			  display: flex;
+			  flex-direction: column;
+			  align-items: flex-start;
+		  }
+  
+		  .contact {
+			  margin-top: 28px;
+			  font-weight: 700 !important;
+		  }
+  
+		  .email {
+			  margin-top: 4px;
+			  font-weight: 500 !important;
+		  }
+  
+		  .columnmobileno {
+			  margin-top: 4px;
+			  display: flex;
+			  flex-direction: column;
+			  align-items: flex-start;
+		  }
+  
+		  .columnaddress {
+			  margin-top: 28px;
+			  display: flex;
+			  flex-direction: column;
+			  align-items: flex-start;
+		  }
+  
+		  .lihatdigoogle {
+			  color: var(--red_700) !important;
+			  font-weight: 500 !important;
+			  text-decoration: underline;
+		  }
+  
+		  .wrapper-sebelahan {
+			  display: flex;
+			  gap: 40px;
+			  align-items: flex-start;
+			  margin-left: auto;
+			  padding-right: 20px;
+			  flex-wrap: wrap; 
+		  }
+  
+		  .columnothers {
+			  display: flex;
+			  flex-direction: column;
+			  align-items: flex-start;
+		  }
+  
+		  .row {
+			  display: flex;
+			  justify-content: space-between;
+			  align-items: center;
+			  gap: 20px;
+			  flex-wrap: wrap; 
+		  }
+  
+		  .rowinstagram {
+			  display: flex;
+			  gap: 4px;
+		  }
+  
+		  .rowcopyright202 {
+			  display: flex;
+			  justify-content: space-between;
+			  align-items: center;
+			  width: 30%;
+		  }
+  
+		  .columnlogo {
+			  background-color: var(--blue_gray_900);
+			  width: 70px;
+			  border-radius: var(--radius-xs);
+		  }
+  
+		  .logo {
+			  color: var(--gray_200) !important;
+		  }
+  
+		  /* Text and Heading Styles */
+		  .ui.text {
+			  color: var(--blue_gray_900);
+			  font-family: Poppins;
+		  }
+  
+		  .ui.text.size-textxs {
+			  font-size: 16px;
+			  font-weight: 400;
+		  }
+  
+		  .ui.heading {
+			  color: var(--blue_gray_900);
+			  font-family: Poppins;
+		  }
+  
+		  .ui.heading.size-headingxs {
+			  font-size: 14px;
+			  font-weight: 700;
+		  }
+  
+		  .ui.heading.size-headings {
+			  font-size: 24px;
+			  font-weight: 700;
+		  }
+  
+		  /* Responsive Styles */
+		  @media (max-width: 1024px) {
+			  .column {
+				  max-width: 900px;
+			  }
+		  }
+  
+		  @media (max-width: 768px) {
+			  .rownamaweb {
+				  flex-direction: column; 
+			  }
+  
+			  .columncontact, .wrapper-sebelahan, .columnothers {
+				  width: 100%; 
+				  margin-top: 20px;
+			  }
+  
+			  .rowcopyright202 {
+				  flex-direction: column;
+				  align-items: center;
+				  width: 100%; 
+			  }
+  
+			  .columnlogo {
+				  margin-top: 20px;
+			  }
+		  }
+  
+		  @media (max-width: 480px) {
+			  .ui.text.size-textxs {
+				  font-size: 14px; 
+			  }
+  
+			  .ui.heading.size-headingxs {
+				  font-size: 12px; 
+			  }
+  
+			  .ui.heading.size-headings {
+				  font-size: 20px;
+			  }
+  
+			  .instagram_one {
+				  height: 24px; 
+				  width: 24px;
+			  }
+  
+			  .rowcopyright202 {
+				  width: 100%;
+				  flex-direction: column;
+			  }
+		  }
+  </style>
+  <footer class="footer">
+	<div class="column">
+		<div class="rownamaweb">
+			<div class="columncontact">
+				<div class="columnnamaweb">
+					<h4 class="ui heading size-headings">SICode</h4>
+					<p class="penjelasan ui text size-textxs">Website Koding Edukatif</p>
+				</div>
+				<h4 class="contact ui heading size-headings">Contact</h4>
+				<p class="email ui text size-textxs">SICode@gmail.com</p>
+				<div class="columnmobileno">
+					<p class="penjelasan ui text size-textxs">+621234567889</p>
+				</div>
+				<div class="columnaddress">
+					<h4 class="ui heading size-headings">Address</h4>
+					<p class="penjelasan ui text size-textxs">Jl. Ahmad Yani, Surabaya</p>
+					<p class="lihatdigoogle ui text size-textxs">Lihat di google maps</p>
+				</div>
+			</div>
+			<div class="wrapper-sebelahan">
+				<div class="rownamaweb_one">
+					<h4 class="ui heading size-headings">SICode</h4>
+					<ul class="columnothers">
+						<li><a href="About-Us.html"><p class="ui text size-textxs">About Us</p></a></li>
+						<li><a href="Partner.html"><p class="ui text size-textxs">Partner</p></a></li>
+					</ul>
+				</div>
+				<div class="columnothers">
+					<h4 class="ui heading size-headings">Others</h4>
+					<ul class="columnothers">
+						<li><a href="Help.html"><p class="ui text size-textxs">FAQ</p></a></li>
+						<li><a href="Privacy-Policy.html"><p class="ui text size-textxs">Privacy Policy</p></a></li>
+						<li><a href="Help.html"><p class="ui text size-textxs">Help</p></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="rowinstagram">
+				<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzy0oArLWzBaMvTH0YnxlB9ksRr1ZroBbyPiReitKCcopnSzJF9FBM6dkEm-VzAi3CAb9fMkiiuELkUFImBSh4vdn4HGg6A0RELeLe0pB9MdJQxLAnA-hec4-cEWKZ2VqpEdCdAqeFbPhYtRw91Y0uLg0laZvn4uMi3ELPnK76QfL0FdQyov1yxKdvYiI/w256-h256-p-k-no-nu/Instagram.png" alt="Instagram" class="instagram_one">
+				<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjroc_dnYzokDABzw_mrOlzS86c9JuVPhlj8472aBmFq6OFAwxsAazcgJe3DMaErVpNLWyB2GXGiCL8p4kqeLQ6SzH5GwMljIECCs783aSsoptOCtyFOtNRoS2Q2-vcpHGvhWU-7ZGdpWAWwrgFpytpYCH8l3Wb3oapoKcbGoGfE6IiXlfFHFL2zYpFIQQ/s32/Facebook.png" alt="Facebook" class="instagram_one">
+			</div>
+			<div class="rowcopyright202">
+				<p class="ui heading size-headingxs">Copyright © 2024 SICode</p>
+				<div class="flex-col-center-center columnlogo">
+					<h4 class="logo ui heading size-headings"></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+  </footer>
+
+<script>
+    function ShowAnswer1() {var Answer1 = document.getElementById("Answer1");
+    Answer1.style.display = (Answer1.style.display === "none") ? "block" : "none";
+    }
+    function ShowAnswer2() {var Answer2 = document.getElementById("Answer2");
+    Answer2.style.display = (Answer2.style.display === "none") ? "block" : "none";}
+	function ShowAnswer3() {var Answer3 = document.getElementById("Answer3");
+    Answer3.style.display = (Answer3.style.display === "none") ? "block" : "none";}
+</script>
+
+ </body>
+ </html>
